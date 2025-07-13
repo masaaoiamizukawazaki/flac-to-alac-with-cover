@@ -1,5 +1,7 @@
 # flac-to-alac-with-cover
 
+📘 日本語版はこちら → [README_JP.md](README_JP.md)
+
 Simple FLAC to ALAC converter using ffmpeg, with automatic cover art embedding.
 
 > ⚠️ Created with the help of AI, and may lack polish or full error handling. Use at your own risk.
