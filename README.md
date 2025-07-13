@@ -1,12 +1,27 @@
-# fac-flac-to-alac-converter
-Simple FLAC to ALAC converter using ffmpeg
+# flac-to-alac-with-cover
 
-# FLAC to ALAC Converter with Cover Art Fix
-
-This is a simple tool to convert FLAC audio files to ALAC (.m4a) using `ffmpeg`,  
-and fix missing cover art (album artwork) issues by extracting from the original FLAC file.
+Simple FLAC to ALAC converter using ffmpeg, with automatic cover art embedding.
 
 > ⚠️ Created with the help of AI, and may lack polish or full error handling. Use at your own risk.
+
+---
+
+## Folder Structure Assumption
+
+This tool assumes your audio files are organized like this:
+
+FLAC/
+  Artist/
+    Album/
+      *.flac
+
+Please select the top-level "FLAC" folder as the input.  
+The output folder "ALAC" will be created with the same artist/album structure automatically:
+
+ALAC/
+  Artist/
+    Album/
+      *.m4a
 
 ---
 
@@ -27,7 +42,7 @@ and fix missing cover art (album artwork) issues by extracting from the original
 2. Extract the ZIP file
 3. Run `FAC_FLAC_to_ALAC_Converter.exe`
 4. Select:
-   - `FLAC Folder`: your source folder with `.flac` files
+   - `FLAC Folder`: the top-level folder described above
    - `Output Folder`: destination for `.m4a` files (auto-suggested)
 5. Click:
    - `Start Conversion` to begin batch conversion
@@ -41,7 +56,7 @@ and fix missing cover art (album artwork) issues by extracting from the original
 
 - Windows 10/11 (64-bit)
 - `ffmpeg.exe` is included in the package
-- No Python installation needed (bundled as standalone .exe)
+- No Python installation needed (bundled as standalone `.exe`)
 
 ---
 
