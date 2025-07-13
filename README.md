@@ -10,20 +10,22 @@ Simple FLAC to ALAC converter using ffmpeg, with automatic cover art embedding.
 
 This tool assumes your audio files are organized like this:
 
+```
 FLAC/
-  Artist/
-    Album/
-      *.flac
+└── Artist/
+    └── Album/
+        └── *.flac
+```
 
 Please select the top-level "FLAC" folder as the input.  
 The output folder "ALAC" will be created with the same artist/album structure automatically:
 
+```
 ALAC/
-  Artist/
-    Album/
-      *.m4a
-
----
+└── Artist/
+    └── Album/
+        └── *.m4a
+```
 
 ## Features
 
